@@ -30,17 +30,17 @@ cd notehub
 ### 2. Create and activate a Conda virtual environment
 
 ```bash
-conda env update -f requirements.yml
+conda create -f environment.yml
 conda activate NoteHub
 ```
 
-### 4. Apply database migrations
+### 3. Apply database migrations
 
 ```bash
 python manage.py migrate
 ```
 
-### 5. Run the development server
+### 4. Run the development server
 
 ```bash
 python manage.py runserver
@@ -53,10 +53,13 @@ python manage.py runserver
 ```
 notehub/
 ├── notes/               # Notes app (models, views, serializers)
-├── notes_app/             # Project settings and URLs
+├── notehub/             # Project settings and URLs
 ├── db.sqlite3           # Development database
 ├── manage.py            # Django's CLI utility
-└── requirements.yml     # Project dependencies
+├── requirements.yml     # Project dependencies
+├── .gitignore
+└── readme.md
+
 ```
 
 ---
@@ -95,5 +98,4 @@ You can extend this project by:
 - Implementing search and filtering
 - Adding Swagger/OpenAPI documentation
 - Deploying to platforms like Render, Railway, or Heroku
-
 ---
