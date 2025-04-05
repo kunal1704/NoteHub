@@ -1,0 +1,43 @@
+﻿# Python cache
+__pycache__/
+*.py[cod]
+*.class
+
+# Virtual environments
+env/
+venv/
+notehub-env/
+
+# Environment variables
+.env
+
+# SQLite database
+*.sqlite3
+db.sqlite3
+
+# Logs
+*.log
+
+# Django migrations (optional)
+# */migrations/
+# !*/migrations/__init__.py
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDEs/editors
+.vscode/
+.idea/
+
+# Test cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+# Pip logs
+pip-log.txt
+pip-delete-this-directory.txt
